@@ -23,9 +23,6 @@ module Players
 
     def valid_move?(board,user_input)
       if position_taken?(board,user_input.to_i) == false && user_input.to_i.between?(0,8) == true
-        true
-      else
-        false
       end
     end
 
