@@ -70,7 +70,7 @@ class Game
     if self.board.cells[@current_player.user_input.to_i - 1] != "X" || self.board.cells[@current_player.user_input.to_i - 1] != "O"
       self.board.cells[@current_player.user_input.to_i - 1] = @current_player.token
     else
-      
+      "Invalid"
     end
     if @current_player === @player_1
       @current_player = @player_2
