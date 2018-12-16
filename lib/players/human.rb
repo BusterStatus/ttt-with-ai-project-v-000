@@ -15,9 +15,7 @@ module Players
     
     def position_taken?(board,user_input)
       if board.cells[user_input.to_i] == "X" || board.cells[user_input.to_i] == "O"
-        true
-      else
-        false
+
       end
     end
 
