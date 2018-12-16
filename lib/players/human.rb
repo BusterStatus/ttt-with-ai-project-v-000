@@ -9,13 +9,12 @@ module Players
       if position_taken?(board,@user_input) == false && valid_move?(board,@user_input) == true
         @user_input
       else
-        "Fuck you."
+        puts "Fuck you."
       end
     end
     
     def position_taken?(board,user_input)
       if board.cells[user_input.to_i] == "X" || board.cells[user_input.to_i] == "O"
-
       end
     end
 
