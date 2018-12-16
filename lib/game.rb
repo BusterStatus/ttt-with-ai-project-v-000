@@ -69,6 +69,7 @@ class Game
     @current_player.move(self.board) until @current_player.user_input.to_i === 1 || @current_player.user_input.to_i === 2 || @current_player.user_input.to_i === 3 || @current_player.user_input.to_i === 4 || @current_player.user_input.to_i === 5 || @current_player.user_input.to_i === 6 || @current_player.user_input.to_i === 7 || @current_player.user_input.to_i === 8 || @current_player.user_input.to_i === 9
     if self.board.cells[@current_player.user_input.to_i - 1] != "X" || self.board.cells[@current_player.user_input.to_i - 1] != "O"
       self.board.cells[@current_player.user_input.to_i - 1] = @current_player.token
+    end
     if @current_player === @player_1
       @current_player = @player_2
     else
